@@ -1,11 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bella Vista Restaurant | Authentic and classis cuisin with traditional serving">
     <title>Bella Vista Restraunt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1></h1>
+    <header class="header">
+        <nav class="navBar wrapper">
+            <div class="logo-tag">
+                <h1 class="logo">Bella Vista</h1>
+                <span class="tagline">
+                    Authentic Italian Cuisine
+                </span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!----------------------- main section --------------------------->
+        <section class="main-section">
+            <div class="background-light">
+                <div class="main-page">
+                    <h2>Welcome to Bella Vista</h2>
+                    <p>Experience the Authentic taste of Italy in the heart of city!</p>
+                </div>
+                <div class="ctc-btn">
+                    <a class="primary-btn" href="#">View Menu</a>
+                    <a class="secondry-btn" href="#">Make Reservation</a>
+                </div>
+            </div>
+        </section>
+        <!----------------------- menu section --------------------------->
+        <section class="menu-section wrapper" id="menu">
+            <div class="menu-title">
+                <h2>Our Menu</h2>
+                <p>Discover Our Carefully Craftes Dishes!</p>
+            </div>
+            <div class="menu-type">
+                <h2>Appetizers</h2>
+            </div>
+            <hr>
+            <div class="menu-item-list">
+                <div class="menu-name">
+                    <div class="dish-name">
+                        <h3>Brushetta Italiana</h3>
+                        <span class="ingredient">Fresh Tomato, Basil, and mozarella on toasted bread</span>
+                    </div>
+                    <div class="menu-price">
+                        <span class="price">$12</span>
+                    </div>
+                </div>
+                <div class="menu-name">
+                    <div class="dish-name">
+                        <h3>Antipasto platter</h3>
+                        <span class="ingredient">Selection fo cured meats, cheeses and marinated vegetable</span>
+                    </div>
+                    <div class="menu-price">
+                        <span class="price">$18</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------- about section --------------------------->
+        <section class="about-section wrapper" id="about">
+            <h3 class="about-title">About Bella Vista</h3>
+            <div class="about-img-info">
+                <div class="about-section-story">
+                    <h4>Our Story</h4>
+                    <p>Founded in 1985 by the Rossi Family, bella Vista has been serving authentic Italian cuisine for
+                        over three decades. Our passion for traditional recipes and fresh ingredients has been made us a
+                        beloved destination for food lovers</p>
+                    <p>Every dish is prepared with love and attention to detail, using recipes passed down througn
+                        generations of Italian chefs.</p>
+                </div>
+                <div class="image">
+                    <img src="./Images/main-secton-img.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+        <!----------------------- about section --------------------------->
+        <section class="contact-section wrapper " id="contact">
+            <h3>Contact Us</h3>
+            <div class="details-grid">
+                <div class="contact-address">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-address-info">
+                        <span>Address:</span>
+                        <p>123, Italian Street, City center, NY 10001</p>
+                    </div>
+                    <div class="contact-address-info">
+                        <span>Phone:</span>
+                        <p>(055) 2763 8364</p>
+                    </div>
+                    <div class="contact-address-info">
+                        <span>Email:</span>
+                        <p>info@bellavista.com</p>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h4>Make A reservation</h4>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">Email:</label>
+                        <input type="email" name="Email" id="email">
+                        <label for="number">Number:</label>
+                        <input type="number" id="number">
+                        <label for="reservationDate">Reservation Date</label>
+                        <input type="date" id="reservationDate">
+                        <label for="timeOfReserve">Time:</label>
+                        <select id="timeOfReserve">
+                            <option value="">Select Time</option>
+                            <option value="">Morning</option>
+                            <option value="">Afternoon</option>
+                            <option value="">Evening</option>
+                            <option value="">Night</option>
+                        </select>
+                        <label for="guest">Number Of Guest:</label>
+                        <select id="guest">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                        <label for="specialRequest">Special Request:</label>
+                        <textarea id="specialRequest" rows="5" cols="40"
+                            placeholder="Write your feedback here..."></textarea>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
